@@ -1,0 +1,1 @@
+criarTabela(20, 60);

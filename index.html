@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tabuleiro.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <style id="estilo">
+        td {
+            padding: 5px;
+        }
+    </style>
+    <div class="container pt-4">
+        <div class="row text-center">
+            <h1>Jogo da Vida</h1>
+        </div>
+
+        <div class="d-flex flex-row justify-content-center pt-3">
+            <div class="tabuleiro"></div>
+        </div>
+
+        <div class="row text-center pt-3">
+            <div id="detalhes" class="col-12 fs-5">
+                Geração: 1 ::: População: 0
+            </div>
+
+            <div class="col-12 mt-2">
+                <button class="btn btn-sm btn-light btn-outline-dark" onclick="iniciar()">INICIAR</button>
+                <button class="btn btn-sm btn-light btn-outline-dark" onclick="parar()">PARAR</button>
+                <button class="btn btn-sm btn-light btn-outline-dark" onclick="reiniciar()">REINICIAR</button>
+            </div>
+
+            <div class="col-12 mt-2">
+                <input class="form-check-input" type="checkbox" value="" id="modoPincel">
+                <label class="form-check-label" for="modoPincel">
+                    Modo Pincel
+                </label>
+
+                <div class="form-text text-dark">
+                    Modo Pincel para criar células mais rapidamente.
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-3">
+            <div class="col-md-2 offset-4">
+                <label id="lblQtdLin" for="qtdLin">Quant. Lin: 15</label><br>
+                <input type="range" id="qtdLin" min="2" max="60" value="20"><br>
+
+                <label id="lblQtdCol" for="qtdCol">Quant. Col: 15</label><br>
+                <input type="range" id="qtdCol" min="2" max="160" value="60"><br>
+            </div>
+            <div class="col-md-2">
+                <label id="lblTamCel" for="tamCel">Tam. Células: 5px</label><br>
+                <input type="range" id="tamCel" min="1" max="25" value="5"><br>
+
+                <label id="lblVel" for="vel">Velocidade: 500ms</label><br>
+                <input type="range" id="vel" min="100" max="3000" step="100" value="500"><br>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/criar_tabela.js"></script>
+    <script src="js/tabela_inicial.js"></script>
+    <script src="js/atualizar_tamanho_tabela.js"></script>
+    <script src="js/mudar_classe.js"></script>
+    <script src="js/jogo.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(110, 250, 185);
+}
+
+table{
+    border: 2px solid black;
+}
+
+td{
+    padding: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+td:hover{
+    background-color: rgb(11, 104, 60);
+}
+
+.viva{
+    background-color: rgb(110, 250, 185);
+}
+
+.morta{
+    background-color: rgb(29, 11, 11);
+}
+
