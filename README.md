@@ -3,7 +3,7 @@ Jogo desenvolvido pelo matemático John Horton Conway.
 
 | ![Transposição Triangular](img/gif-jogo-da-vida.gif "Transposição Triangular") |
 |-|
-| *Transposição Triangular* |
+| *Exemplo de Glider Gun, o primeiro e menor conhecido.* |
 
 [Acesse o jogo](https://davidgomesh.github.io/jogo-da-vida-js/)
 
