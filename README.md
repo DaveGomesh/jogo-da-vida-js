@@ -5,7 +5,7 @@ Jogo desenvolvido pelo matemático John Horton Conway.
 |-|
 | *Transposição Triangular* |
 
-[Acesse o jogo](url)
+[Acesse o jogo](https://davidgomesh.github.io/jogo-da-vida-js/)
 
 ## Regras do Jogo
 1. Qualquer célula viva com menos de dois vizinhos vivos morre de solidão.
